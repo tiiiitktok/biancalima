@@ -6,22 +6,22 @@
 <title>Acceso Exclusivo — Grupo de Previews</title>
 <style>
   :root{
-    --bg:#0b0d10;
-    --bg-alt:#14171c;
-    --card:#181c22;
-    --gold:#d4af37;
-    --gold-soft:#f0d888;
-    --tg:#2aa3e2;
-    --text:#eceef1;
-    --text-dim:#8a919c;
-    --danger:#e2543a;
+    --bg:#050505;
+    --bg-alt:#0f0f0f;
+    --card:#141414;
+    --gold:#e0201a;
+    --gold-soft:#ff5a3c;
+    --tg:#e0201a;
+    --text:#ffffff;
+    --text-dim:#a3a3a3;
+    --danger:#ff2d2d;
     --radius:14px;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html,body{height:100%;}
   body{
     font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;
-    background:radial-gradient(circle at 50% -10%, #1b2028 0%, var(--bg) 60%);
+    background:radial-gradient(circle at 50% -10%, #1a0808 0%, var(--bg) 60%);
     color:var(--text);
     min-height:100vh;
     display:flex;
@@ -39,7 +39,7 @@
   }
   .glow{
     position:fixed; width:600px; height:600px; border-radius:50%;
-    background:radial-gradient(circle, rgba(212,175,55,.15), transparent 70%);
+    background:radial-gradient(circle, rgba(224,32,26,.18), transparent 70%);
     top:-200px; left:50%; transform:translateX(-50%);
     pointer-events:none;
   }
@@ -68,7 +68,7 @@
     margin:0 auto 18px;
     display:block;
     border:2px solid var(--gold);
-    box-shadow:0 0 0 6px rgba(212,175,55,.12), 0 14px 30px -10px rgba(0,0,0,.6);
+    box-shadow:0 0 0 6px rgba(224,32,26,.15), 0 14px 30px -10px rgba(0,0,0,.6);
   }
   h1{
     font-size:clamp(28px,7vw,38px);
@@ -94,15 +94,15 @@
     padding:18px 22px;
     border-radius:var(--radius);
     border:none;
-    background:linear-gradient(135deg,var(--tg),#1f8fd0);
+    background:linear-gradient(135deg,var(--tg),#a80f0f);
     color:#fff;
     font-size:16px;
     font-weight:600;
     cursor:pointer;
-    box-shadow:0 10px 30px -8px rgba(42,163,226,.55);
+    box-shadow:0 10px 30px -8px rgba(224,32,26,.55);
     transition:transform .15s ease, box-shadow .15s ease;
   }
-  .cta:hover{transform:translateY(-2px); box-shadow:0 14px 34px -8px rgba(42,163,226,.7);}
+  .cta:hover{transform:translateY(-2px); box-shadow:0 14px 34px -8px rgba(224,32,26,.75);}
   .cta:active{transform:translateY(0);}
   .cta svg{width:20px;height:20px;flex-shrink:0;}
 
@@ -183,9 +183,9 @@
   .btn:active{transform:scale(.97);}
   .btn-yes{
     background:var(--gold);
-    color:#1a1400;
+    color:#ffffff;
   }
-  .btn-yes:hover{filter:brightness(1.08);}
+  .btn-yes:hover{filter:brightness(1.1);}
   .btn-no{
     background:transparent;
     border-color:rgba(255,255,255,.14);
